@@ -29,7 +29,6 @@ class CreateTaskRequest extends FormRequest
         return [
             'title' => 'required|unique:users,username',
             'description' => 'nullable|string',
-            'status' => 'required|string',
             'project_id' => 'required|exists:projects,id',
             'user_id' => 'required|exists:users,id',
         ];

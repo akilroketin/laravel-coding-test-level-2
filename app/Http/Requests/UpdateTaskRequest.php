@@ -29,7 +29,7 @@ class UpdateTaskRequest extends FormRequest
         return [
             'title' => 'required|unique:users,username',
             'description' => 'nullable|string',
-            'status' => 'required|string',
+            'status' => 'required|string|in:NOT_STARTED,IN_PROGRESS,READY_FOR_TEST,COMPLETED',
             'project_id' => 'required|exists:projects,id',
             'user_id' => 'required|exists:users,id',
         ];

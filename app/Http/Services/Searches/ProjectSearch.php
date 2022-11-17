@@ -2,8 +2,8 @@
 
 namespace App\Http\Services\Searches;
 
-use App\Http\Services\Searches\Filters\Projects\Search;
-use App\Http\Services\Searches\Filters\Projects\SortProject;
+use App\Http\Services\Searches\Filters\Project\Search;
+use App\Http\Services\Searches\Filters\Project\SortProject;
 use App\Http\Services\Searches\HttpSearch;
 use App\Models\Project;
 
@@ -18,8 +18,8 @@ class ProjectSearch extends HttpSearch
 	protected function filters(): array
 	{
 		return [
-			// SortProject::class,
-			// Search::class,
+            SortProject::class,
+            Search::class,
 		];
 	}
 

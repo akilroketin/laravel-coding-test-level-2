@@ -4,16 +4,17 @@ namespace App\Http\Repositories;
 
 use App\Http\Repositories\Contracts\TaskContract;
 use App\Models\Task;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class TaskRepository extends BaseRepository implements TaskContract
 {
-    protected $project;
+    protected $task;
 
-    public function __construct(Task $project)
+    public function __construct(Task $task)
     {
-        parent::__construct($project);
-        $this->project = $project;
+        parent::__construct($task);
+        $this->task = $task;
     }
 
     public function createTask($attributes)
@@ -28,17 +29,28 @@ class TaskRepository extends BaseRepository implements TaskContract
     public function updateTask($attributes, $id)
     {
         return DB::transaction(function () use ($attributes, $id) {
-            $this->update($attributes, $id);
+            if((Auth::user())->hasRole('MEMBER')) {
+                $data = $this->task->where('user_id', Auth::user()->id)->where('id', $id)->first();
 
-            $data = $this->project->find($id);
+                if ($data) {
+                    return $this->task->where('user_id', Auth::user()->id)->where('id', $id)->update($attributes);
+                }
+            } else {
 
-            return $data;
+                $this->update($attributes, $id);
+
+                $data = $this->task->find($id);
+
+                return $data;
+            }
+
+            return null;
         });
     }
 
     public function createOrUpdateTask($attributes, $id)
     {
-        $data = $this->project->find($id);
+        $data = $this->task->find($id);
         if ($data !== null) {
             return $this->updateTask($attributes, $id);
         } else {
@@ -48,7 +60,7 @@ class TaskRepository extends BaseRepository implements TaskContract
 
     public function showTask($id)
     {
-        return $this->project->find($id);
+        return $this->task->find($id);
     }
 
     public function deleteTask($id)

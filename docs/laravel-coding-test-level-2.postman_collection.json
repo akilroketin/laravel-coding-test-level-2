@@ -1,0 +1,2013 @@
+{
+	"info": {
+		"_postman_id": "c25baff4-a7ab-468d-a309-cc224a992ac4",
+		"name": "laravel-coding-test-level-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3732228"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Show All User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/users",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show All User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/users",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 02:33:06 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"0e91a932-11ed-4164-aaa4-c88678583d53\",\n            \"name\": \"admin\",\n            \"email\": \"admin@mailinator.com\",\n            \"username\": \"admin\"\n        },\n        {\n            \"id\": \"300a538e-4f99-4377-b76b-3403e18b2ec1\",\n            \"name\": \"member3\",\n            \"email\": \"member3@mailinator.com\",\n            \"username\": \"member3\"\n        },\n        {\n            \"id\": \"347e11da-77a1-43dd-97d7-ad0898c9565c\",\n            \"name\": \"product owner\",\n            \"email\": \"po@mailinator.com\",\n            \"username\": \"product_owner\"\n        },\n        {\n            \"id\": \"966b16e9-9b8d-4eae-abbe-7860492675ae\",\n            \"name\": \"member2\",\n            \"email\": \"member2@mailinator.com\",\n            \"username\": \"member2\"\n        },\n        {\n            \"id\": \"b9e73350-8013-42a0-99c0-3e24fcaa0cc8\",\n            \"name\": \"Muhammad Akil\",\n            \"email\": \"ben@akil.co.id\",\n            \"username\": \"ak4bento\"\n        },\n        {\n            \"id\": \"ff159291-01e3-435e-ac99-8a85a8ec17d3\",\n            \"name\": \"member1\",\n            \"email\": \"member1@mailinator.com\",\n            \"username\": \"member1\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://accenture.loc/api/users?page=1\",\n        \"last\": \"http://accenture.loc/api/users?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://accenture.loc/api/users?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://accenture.loc/api/users\",\n        \"per_page\": 10,\n        \"to\": 6,\n        \"total\": 6\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show Detail User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/users/0e91a932-11ed-4164-aaa4-c88678583d53",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users",
+								"0e91a932-11ed-4164-aaa4-c88678583d53"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Detail User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/users/0e91a932-11ed-4164-aaa4-c88678583d53",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"users",
+										"0e91a932-11ed-4164-aaa4-c88678583d53"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 02:33:37 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"0e91a932-11ed-4164-aaa4-c88678583d53\",\n        \"name\": \"admin\",\n        \"email\": \"admin@mailinator.com\",\n        \"username\": \"admin\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Data User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Muhammad Akil",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "akil",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "akil@akil.co.id",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/users",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Data User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Muhammad Akil",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "akil",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "akil@akil.co.id",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://accenture.loc/api/users",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 02:33:51 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"45739950-6c5a-4c41-b21e-ce32a8acbb83\",\n        \"name\": \"Muhammad Akil\",\n        \"email\": \"akil@akil.co.id\",\n        \"username\": \"akil\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Or update Data User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Muhammad Akil",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "akilroketin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "assisten@akil.co.id",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/users/0e91a932-11ed-4164-aaa4-c88678583d54",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users",
+								"0e91a932-11ed-4164-aaa4-c88678583d54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Muhammad Akil",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ak4ben",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "muhammad@akil.co.id",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/users/0e91a932-11ed-4164-aaa4-c88678583d53",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users",
+								"0e91a932-11ed-4164-aaa4-c88678583d53"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Data User",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Muhammad Akil",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "ak4ben",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "muhammad@akil.co.id",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://accenture.loc/api/users/0e91a932-11ed-4164-aaa4-c88678583d53",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"users",
+										"0e91a932-11ed-4164-aaa4-c88678583d53"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 02:34:44 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"0e91a932-11ed-4164-aaa4-c88678583d53\",\n        \"name\": \"Muhammad Akil\",\n        \"email\": \"muhammad@akil.co.id\",\n        \"username\": \"ak4ben\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/users/b9e73350-8013-42a0-99c0-3e24fcaa0cc8",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"users",
+								"b9e73350-8013-42a0-99c0-3e24fcaa0cc8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/users/b9e73350-8013-42a0-99c0-3e24fcaa0cc8",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"users",
+										"b9e73350-8013-42a0-99c0-3e24fcaa0cc8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 02:57:46 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Delete Success\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Show All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/tasks",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/tasks/b65a9610-c938-4f86-b992-2035f3a56c58",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"b65a9610-c938-4f86-b992-2035f3a56c58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "CRUD user",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "For test",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "NOT_STARTED",
+									"description": "NOT_STARTED, IN_PROGRESS, READY_FOR_TEST, COMPLETED",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "e8df9672-0396-49bb-8500-55ceb0f7ad62",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "0a6207ac-a2e8-43e5-8c4c-0defce5943eb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/tasks",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Or update Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "CRUD user",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "For test",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "NOT_STARTED",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "399ce825-85c7-4d25-919e-eba3dbca1a4d",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "0c8f1a6c-f286-45b6-b6d5-61672795c3af",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/tasks/0c8f1a6c-f286-87as-b6d5-61672795c3af",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"0c8f1a6c-f286-87as-b6d5-61672795c3af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "CRUD user",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "For test",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "NOT_STARTED",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "399ce825-85c7-4d25-919e-eba3dbca1a4d",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "0c8f1a6c-f286-45b6-b6d5-61672795c3af",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/tasks/b65a9610-c938-4f86-b992-2035f3a56c58",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"b65a9610-c938-4f86-b992-2035f3a56c58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/tasks/9a60cae7-8a7f-46a8-a1e4-69f7f6914fe1",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"9a60cae7-8a7f-46a8-a1e4-69f7f6914fe1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Show All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/projects?q=roketin&pageSize=1&sortBy=projects.name&sortDirection=desc",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "roketin"
+								},
+								{
+									"key": "pageSize",
+									"value": "1"
+								},
+								{
+									"key": "sortBy",
+									"value": "projects.name"
+								},
+								{
+									"key": "sortDirection",
+									"value": "desc"
+								},
+								{
+									"key": "pageIndex",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/projects?q=roketin&pageSize=1&sortBy=projects.name&sortDirection=desc",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "roketin"
+										},
+										{
+											"key": "pageSize",
+											"value": "1"
+										},
+										{
+											"key": "sortBy",
+											"value": "projects.name"
+										},
+										{
+											"key": "sortDirection",
+											"value": "desc"
+										},
+										{
+											"key": "pageIndex",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:03:57 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"9c6aad24-76dd-449f-af21-eea25dc52034\",\n            \"name\": \"roketin\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://accenture.loc/api/projects?page=1\",\n        \"last\": \"http://accenture.loc/api/projects?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://accenture.loc/api/projects?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://accenture.loc/api/projects\",\n        \"per_page\": \"1\",\n        \"to\": 1,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/projects/9c6aad24-76dd-449f-af21-eea25dc52034",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects",
+								"9c6aad24-76dd-449f-af21-eea25dc52034"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Detail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/projects/9c6aad24-76dd-449f-af21-eea25dc52034",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects",
+										"9c6aad24-76dd-449f-af21-eea25dc52034"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:04:26 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"9c6aad24-76dd-449f-af21-eea25dc52034\",\n        \"name\": \"roketin\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "gitlab",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/projects",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "gitlab",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://accenture.loc/api/projects",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:04:49 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"a7cf7930-a460-4064-af98-8e7e75d7afcd\",\n        \"name\": \"gitlab\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Or update Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Laravel",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/projects/0c8f1a6c-f286-87as-b6d5-61672795c3af",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects",
+								"0c8f1a6c-f286-87as-b6d5-61672795c3af"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Or update Data",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Laravel",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://accenture.loc/api/projects/0c8f1a6c-f286-87as-b6d5-61672795c3af",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects",
+										"0c8f1a6c-f286-87as-b6d5-61672795c3af"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:08:11 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"904ad850-c57c-4df9-a34f-bdd9317f54ef\",\n        \"name\": \"Laravel\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Laravel Nova",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/projects/904ad850-c57c-4df9-a34f-bdd9317f54ef",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects",
+								"904ad850-c57c-4df9-a34f-bdd9317f54ef"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Data",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Laravel Nova",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://accenture.loc/api/projects/904ad850-c57c-4df9-a34f-bdd9317f54ef",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects",
+										"904ad850-c57c-4df9-a34f-bdd9317f54ef"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:08:35 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"904ad850-c57c-4df9-a34f-bdd9317f54ef\",\n        \"name\": \"Laravel Nova\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://accenture.loc/api/projects/904ad850-c57c-4df9-a34f-bdd9317f54ef",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"projects",
+								"904ad850-c57c-4df9-a34f-bdd9317f54ef"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://accenture.loc/api/projects/904ad850-c57c-4df9-a34f-bdd9317f54ef",
+									"protocol": "http",
+									"host": [
+										"accenture",
+										"loc"
+									],
+									"path": [
+										"api",
+										"projects",
+										"904ad850-c57c-4df9-a34f-bdd9317f54ef"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.23.1"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 17 Nov 2022 03:09:14 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Delete Success\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    ",
+							"    pm.test(\"Token get\", function () {",
+							"        var jsonData = pm.response.json();",
+							"        pm.environment.set(\"token\", jsonData.token);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://accenture.loc/api/login",
+					"protocol": "http",
+					"host": [
+						"accenture",
+						"loc"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/login",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.23.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Nov 2022 02:31:19 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User Successfully Logged In\",\n    \"token\": \"2|yt8LG4BipfZJVohrdfAwOmE8diorf5RUy5VMF83Q\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    ",
+							"    pm.test(\"Token get\", function () {",
+							"        var jsonData = pm.response.json();",
+							"        pm.environment.set(\"token\", jsonData.token);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Muhammad Akil",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ak4bento",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ben@akil.co.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://accenture.loc/api/register",
+					"protocol": "http",
+					"host": [
+						"accenture",
+						"loc"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Muhammad Akil",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ak4bento",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ben@akil.co.id",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://accenture.loc/api/register",
+							"protocol": "http",
+							"host": [
+								"accenture",
+								"loc"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.23.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Nov 2022 02:31:48 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User Successfully Created\",\n    \"token\": \"3|9PJJDxW2DacJsGhiHTH5KmnDjVQ4EbrmxHrfQCfY\"\n}"
+				}
+			]
+		}
+	]
+}
