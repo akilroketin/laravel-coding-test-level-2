@@ -26,7 +26,7 @@ class ProjectController extends Controller
     public function index()
     {
         $factory = app()->make(ProjectSearch::class);
-        $data = $factory->apply()->paginate(request('per_page', 10));
+        $data = $factory->apply()->paginate(request('pageSize', 3));
         return ProjectResource::collection($data);
     }
 
